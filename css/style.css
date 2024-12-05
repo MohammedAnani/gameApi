@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}body{
+    background-color: #272B30;
+    font-family: "Barlow Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+.bg-color{
+  background-color: #3A497B;
+}
+.nav-link,.navbar-brand{
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.nav-link:hover{
+  color: #0999BD;
+}
+.active{
+color: #0999BD!important;
+}
+.img-logo img{
+    width: 22%;
+}
+header>img{
+    max-height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+.bg{
+    background-color: #272B30;
+    color: white;
+    border-color:  white;
+    transition: all 1s;
+    border-radius: 10px;
+}
+.bg:hover{
+  transform: scale(1.05);
+}
+.loader {
+  width: 70px;
+  height: 70px;
+  border: 3px dotted #FFF;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 2s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #FF3D00;
+  border-style: solid solid dotted;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+} 
+
+
+.details-section {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+.game-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.btn-custom {
+  background-color: #0999BD;
+  color: white;
+  border: none;
+}
+.btn-custom a{
+  color: white;
+  text-decoration: none;
+
+}
+.btn-custom:hover {
+  background-color: #031317;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  color: red;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #ffc107;
+}

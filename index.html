@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Reviews</title>
+  <link rel="icon" href="images/logo-sm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="images/wraper.png" alt="Header Image">
+    </header>
+    <nav class="navbar navbar-expand-lg bg-color rounded-3 py-3 fs-5">
+      <div class="container-fluid">
+        <div class="img-logo d-flex justify-content-center align-items-center">
+          <img src="images/logo-sm.png" class="" alt="Logo">
+          <span class="text-white fs-2 ms-2">Game Reviews</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" data-catagory="mmorpg" href="#">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-catagory="shooter" href="#">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-catagory="sailing" href="#">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-catagory="permadeath" href="#">permadeath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-catagory="superhero" href="#">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-catagory="pixel" href="#">pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row" id="rowData">
+      <!-- Content will be loaded dynamically -->
+    </div>
+  </div>
+
+  <div class="spin load  d-flex justify-content-center align-items-center position-fixed top-0 end-0 start-0 w-100 h-100 d-none">
+    <span class="loader"></span>
+  </div>
+
+  <div class="container details-section my-4 d-none" id="details">
+    <i class="fa-solid fa-xmark close-btn" id="btnClose"></i>
+    <h2 class="mb-4">Details Game</h2>
+    <div class="row " id="detailsContent">
+      <!-- Content will be loaded dynamically -->
+    </div>
+  </div>
+
+  <!-- Add Bootstrap JS Bundle -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
